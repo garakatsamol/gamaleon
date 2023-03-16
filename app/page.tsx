@@ -115,9 +115,11 @@ export default function Home() {
     <div className="bg-black mt-10 flex items-center justify-center">
       <main className=" max-w-xl mx-auto">
         <h1 className="text-white text-3xl font-bold mb-8">
-          Generate your AI Image
+          Gamaleon 
         </h1>
 
+      <h3 className="text-white text-2xl mb-2">Σχεδίασε την εικόνα σου.</h3>
+      <p className="text-white mb-2">Γράψε μια σύντομη περιγραφή (στα αγγλικά) της εικόνας που θες να σχεδιαστεί</p>
         <section className="max-w-full">
           <div className="flex items-center">
             <input
