@@ -38,7 +38,7 @@ export default function Home() {
     }
 
     // API returns an array of images. 
-    // As we just generate 1 image, then get the URI of the first image
+  
     const uri = data.images[0].uri;
     setGeneratedImage(uri);
     setInferences([...inferences, data]);
@@ -112,7 +112,7 @@ export default function Home() {
   };
   return (
 
-    <div className="bg-black mt-10 flex items-center justify-center">
+    <div className="bg-black pt-10 flex items-center justify-center">
       <main className=" max-w-xl mx-auto">
         <h1 className="text-white text-3xl font-bold mb-8">
           Gamaleon 
@@ -120,6 +120,7 @@ export default function Home() {
 
       <h3 className="text-white text-2xl mb-2">Σχεδίασε την εικόνα σου.</h3>
       <p className="text-white mb-2">Γράψε μια σύντομη περιγραφή (στα αγγλικά) της εικόνας που θες να σχεδιαστεί</p>
+       <small>*2-3 και πολλές είναι, έχουμε μέχρι 100</small>
         <section className="max-w-full">
           <div className="flex items-center">
             <input
@@ -129,7 +130,7 @@ export default function Home() {
               name="prompt"
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
-              className="rounded-l-lg py-3 px-4 w-full text-gray-300 focus:outline-none"
+              className="rounded-l-lg py-3 px-4 w-full text-gray-600 focus:outline-none"
               placeholder="Enter your prompt here"
             />
 
